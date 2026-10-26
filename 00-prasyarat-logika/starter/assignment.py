@@ -46,7 +46,19 @@ def evaluate_boolean_logic(p: bool, q: bool, operation: str) -> bool:
         ValueError: Jika jenis operasi tidak dikenali.
     """
     # TODO: Implementasikan logika evaluasi sesuai nilai 'operation'
-    raise NotImplementedError("TODO: Kerjakan fungsi evaluate_boolean_logic")
+
+    if operation == 'AND':
+        return p and q
+    elif operation == 'OR':
+        return p or q
+    elif operation == 'NOT_P':
+        return not p
+    elif operation == 'XOR':
+        return p ^ q
+    elif operation == 'IMPLIES':
+        return (not p) or q
+    else:
+        raise ValueError(f"Operasi {operation} tidak dikenali.")
 
 
 # ---------------------------------------------------------------------------
@@ -70,6 +82,17 @@ def set_operations_summary(list_a: List[Any], list_b: List[Any]) -> Dict[str, Li
     """
     # TODO: Gunakan tipe data set Python untuk melakukan operasi himpunan,
     # lalu kembalikan dalam bentuk list yang terurut menggunakan sorted().
+
+    set_a = set(list_a)
+    set_b = set(list_b)
+
+    return {
+        "union": sorted(set_a | set_b),
+        "intersection": sorted(set_a & set_b),
+        "difference_a_b": sorted(set_a - set_b),
+        "symmetric_diff": sorted(set_a ^ set_b)
+    }
+    
     raise NotImplementedError("TODO: Kerjakan fungsi set_operations_summary")
 
 
@@ -95,6 +118,19 @@ def create_node_chain(values: List[Any]) -> Optional[Node]:
         Node pertama (head) dari rantai node yang terbentuk, atau None jika list kosong.
     """
     # TODO: Buat simpul-simpul Node dan hubungkan atribut .next dari simpul pertama hingga terakhir.
+
+    if not values:
+        return None
+
+    head = Node(values[0])
+
+    current = head
+
+    for val in values[1:]:
+        current.next = Node(val)
+        current = current.next
+
+    return head
     raise NotImplementedError("TODO: Kerjakan fungsi create_node_chain")
 
 
@@ -119,4 +155,11 @@ def traverse_and_count_nodes(head: Optional[Node]) -> Tuple[int, List[Any]]:
         Tuple berupa: (jumlah_total_node, list_nilai_node_secara_berurutan)
     """
     # TODO: Gunakan perulangan while untuk menelusuri rantai pointer node.
+    
+    ## buat definisi dasar kalau None berarti outputnya adalah 0 dan []
+
+    ## definisikan kepala dari rantai node
+
+    ## menghitung jumlah node dan menampilkan node node yang ada dalam tuples tersebut.
+    
     raise NotImplementedError("TODO: Kerjakan fungsi traverse_and_count_nodes")
