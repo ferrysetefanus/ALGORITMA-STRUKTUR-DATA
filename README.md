@@ -64,21 +64,17 @@ nama-modul/
 
 ---
 
-## 🚀 Menghubungkan Repositori Ini ke GitHub Pribadi
+## 🚀 Repositori GitHub
 
-Agar progres belajar Anda terdokumentasi rapi di internet dan menjadi portofolio coding publik Anda:
+Repositori ini telah terhubung ke GitHub:
+**[https://github.com/ferrysetefanus/ALGORITMA-STRUKTUR-DATA](https://github.com/ferrysetefanus/ALGORITMA-STRUKTUR-DATA)**
 
-1. Buat repositori baru yang kosong di akun [GitHub](https://github.com/new) Anda (misal beri nama: `algoritma-struktur-data`).
-2. Jalankan perintah berikut di terminal repositori lokal Anda:
-   ```powershell
-   git branch -M main
-   git remote add origin https://github.com/USERNAME-ANDA/algoritma-struktur-data.git
-   git push -u origin main
-   ```
-3. Setiap kali Anda menyelesaikan modul baru, cukup jalankan:
-   ```powershell
-   git push
-   ```
+Setiap kali Anda menyelesaikan modul baru atau tugas baru, cukup jalankan perintah berikut untuk menyinkronkan progres Anda:
+```powershell
+git add .
+git commit -m "feat(modul-xx): selesai mengerjakan tugas"
+git push
+```
 
 ---
 
