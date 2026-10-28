@@ -10,7 +10,7 @@ Repositori ini dirancang khusus dengan pendekatan **Hands-on & Test-Driven**: se
 
 Beri tanda centang `[x]` setiap kali Anda menyelesaikan tugas pada masing-masing modul:
 
-- [ ] **[Modul 0: Jembatan Logika & Pemrograman (Prerequisite Bridge)](./00-prasyarat-logika/README.md)**
+- [x] **[Modul 0: Jembatan Logika & Pemrograman (Prerequisite Bridge)](./00-prasyarat-logika/README.md)**
   - Pola Pikir Komputasi, Aljabar Boolean, Logika Himpunan visual, Referensi Objek RAM Python, dan Struktur Node Pertama.
 - [ ] **Modul 1: Fondasi Analisis & Paradigma Dasar**
   - Notasi Asimptotik (Big-O, Big-$\Omega$, Big-$\Theta$), Model Memori Python, Analisis Rekursi vs Iterasi, dan Dynamic Array.

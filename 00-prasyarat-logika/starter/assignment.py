@@ -92,8 +92,6 @@ def set_operations_summary(list_a: List[Any], list_b: List[Any]) -> Dict[str, Li
         "difference_a_b": sorted(set_a - set_b),
         "symmetric_diff": sorted(set_a ^ set_b)
     }
-    
-    raise NotImplementedError("TODO: Kerjakan fungsi set_operations_summary")
 
 
 # ---------------------------------------------------------------------------
@@ -131,7 +129,6 @@ def create_node_chain(values: List[Any]) -> Optional[Node]:
         current = current.next
 
     return head
-    raise NotImplementedError("TODO: Kerjakan fungsi create_node_chain")
 
 
 # ---------------------------------------------------------------------------
@@ -157,9 +154,18 @@ def traverse_and_count_nodes(head: Optional[Node]) -> Tuple[int, List[Any]]:
     # TODO: Gunakan perulangan while untuk menelusuri rantai pointer node.
     
     ## buat definisi dasar kalau None berarti outputnya adalah 0 dan []
+    if head is None:
+        return (0, [])
 
     ## definisikan kepala dari rantai node
+    count = 0
+    values = []
+    current = head
 
     ## menghitung jumlah node dan menampilkan node node yang ada dalam tuples tersebut.
+    while current is not None:
+        count += 1
+        values.append(current.val)
+        current = current.next
     
-    raise NotImplementedError("TODO: Kerjakan fungsi traverse_and_count_nodes")
+    return (count, values)

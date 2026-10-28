@@ -52,10 +52,10 @@ Gunakan checklist ini untuk melacak perkembangan:
 - `[-]` Modul Aktif / Sedang Dikerjakan Pembelajar
 - `[x]` Selesai & Lulus Unit Test
 
-- [-] **Modul 0: Jembatan Logika & Pemrograman (Prerequisite Bridge)**
+- [x] **Modul 0: Jembatan Logika & Pemrograman (Prerequisite Bridge)**
   - [x] Teori: Pola pikir komputasi, Aljabar Boolean, Logika Himpunan visual, Konsep Referensi Objek di RAM Python.
-  - [-] Tugas: Evaluator ekspresi logika, manipulasi struktur `Node` berantai pertama (menunggu pengerjaan user).
-  - [x] Unit Test: Validasi kebenaran logika & integritas node pointer (5 automated tests siap diuji).
+  - [x] Tugas: Evaluator ekspresi logika, manipulasi struktur `Node` berantai pertama (selesai dan lulus unit test).
+  - [x] Unit Test: Validasi kebenaran logika & integritas node pointer (5 automated tests lulus).
 - [ ] **Modul 1: Fondasi Analisis & Paradigma Dasar**
   - [ ] Teori: Notasi Asimptotik (Big-O, Big-$\Omega$, Big-$\Theta$), Call Stack Frame, Rekursi vs Iterasi.
   - [ ] Tugas: Perhitungan manual operasi loop bertingkat, `CustomDynamicArray` sederhana, Fast Exponentiation $O(\log n)$.
